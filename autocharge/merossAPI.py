@@ -37,7 +37,7 @@ def turn_onoff(email: str, password: str, uuid: str, turn_on: bool):
     loop.stop()
 
 if __name__ == '__main__':
-    email = 'ricky_barry@hotmail.com'
-    password = 'Cyber001'
-    uuid = '20051817743225251h4048e1e91c57c2'
+    email = '<email>'
+    password = '<password>'
+    uuid = '<uuid>'
     turn_onoff(email, password, uuid, turn_on=True)

@@ -30,8 +30,8 @@ while True:
 
     #get power from solax cloud
     try:
-        token = '20210525003817083088792'
-        sn = 'SWR8VUTYY7'
+        token = '<insert your API token here>'
+        sn = '<insert your sn here>'
         solax_info = solax_request(token, sn)
         power = solax_info['acpower']
         print(f'AC Power: {round(power)}W')
@@ -51,9 +51,9 @@ while True:
 
     #turn plug on or off
     try:
-        email = 'ricky_barry@hotmail.com'
-        password = 'Cyber001'
-        uuid = '20051817743225251h4048e1e91c57c2'
+        email = '<insert your Meross email here>'
+        password = '<insert your Meross password here>'
+        uuid = '<insert your Meross plug uuid here>'
         turn_onoff(email, password, uuid, turn_on=turn_plug_on)
 
         if turn_plug_on:
@@ -70,7 +70,7 @@ while True:
 
 
     #if an error occured retry in 5 seconds
-    #if not then wait the standard 60 seconds before rechecking\
+    #if not then wait the standard 60 seconds before rechecking
     if err == True:
         time.sleep(5)
     else:
