@@ -1,7 +1,4 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux
-
 ### Linux ###
 *~
 
@@ -36,8 +33,7 @@
 # Support for Project snippet scope
 !.vscode/*.code-snippets
 
-#pychache
-__pycache__/
-autocharge/__pycache__/
+#pychaches should not be tracked
+**/__pycache__/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux
