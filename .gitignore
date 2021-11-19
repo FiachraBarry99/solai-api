@@ -36,4 +36,8 @@
 # Support for Project snippet scope
 !.vscode/*.code-snippets
 
+#pychache
+__pycache__/
+autocharge/__pycache__/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux
