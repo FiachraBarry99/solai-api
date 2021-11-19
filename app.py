@@ -3,8 +3,6 @@ from flask_restx import Api, Resource, fields
 from werkzeug.middleware.proxy_fix import ProxyFix
 from run_services import run_services
 
-from run_services import run_services
-
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
