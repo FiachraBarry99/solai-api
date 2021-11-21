@@ -6,3 +6,4 @@ This API will be served from the Raspberry Pi over the local network which will 
 service available is one to turn on a smart switch that controls an electric car charger. However, the project is set up to allow further expansion into other services.
 Below is a basic system diagram showing the architecture of the project:
 
+![System Diagram](/system-diagram.png?raw=true)
