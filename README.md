@@ -12,4 +12,4 @@ This API will allow control and communication between the client and server (Ras
 
 The reason I say RESTful(ish) is that the API is not currently stateless as the list of active/inactive services is stored in the memory of the API not a database. However, in the future I plan to migrate all the client context from this memory into a database (SQLite, mySQL etc.) which will also run on the Raspberry Pi. Also, currently the client has no control over the conditions which trigger the service (water/air temperature, incoming solar power etc.) These should also be stored in the database and exposed via a separate endpoint of the API.
 
-If you are looking to implement a similar project yourself please don't hesitate to reach out for help or advice I would be more than happy.
+If you are looking to implement a similar project yourself please don't hesitate to reach out for help or advice I would be more than happy!
