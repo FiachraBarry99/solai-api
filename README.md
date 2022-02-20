@@ -13,3 +13,6 @@ This API will allow control and communication between the client and server (Ras
 The reason I say RESTful(ish) is that the API is not currently stateless as the list of active/inactive services is stored in the memory of the API not a database. However, in the future I plan to migrate all the client context from this memory into a database (SQLite, mySQL etc.) which will also run on the Raspberry Pi. Also, currently the client has no control over the conditions which trigger the service (water/air temperature, incoming solar power etc.) These should also be stored in the database and exposed via a separate endpoint of the API.
 
 If you are looking to implement a similar project yourself please don't hesitate to reach out for help or advice I would be more than happy!
+
+## Autocharge
+The aim of this service is to use the excess energy generated from the solar panels to charge a electric vehcle. It works by checking the temperature from a Blue Maestro sensor (using an API I wrote myself), checking how much power is coming through the solar panels and then deciding whether to turn on/off a smart switch. The Blue Maestro sensor is placed on our water tank and allows us to heat the water up to a certain temperature before switching on the smart switch. The smart switch has the charger for the car plugged into it.
